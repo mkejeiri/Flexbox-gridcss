@@ -1,0 +1,103 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: arial, sans-serif;
+}
+
+.grid-container {
+    display: inline-grid;
+    border: solid 4px #000;
+    grid-template-columns: 6em 1em 6em 1em 6em 1em 6em;
+    grid-template-rows: 6em 1em 6em;
+    /* width: 100%;
+    height: 100%; */
+}
+
+.grid-item {
+    color: #fff;
+    box-sizing: border-box;
+    font-size: 1.2em;
+    padding: 1em;
+    text-align: center;
+    opacity: 0.8;
+    /* width: 35%; */
+}
+
+.grid-item:first-child {
+    background-color: #A62E5C;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.grid-item:nth-child(2) {
+    background-color: #9BC850;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.grid-item:nth-child(3) {
+    background-color: rgb(42, 17, 184);
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.grid-item:nth-child(4) {
+    background-color: rgb(255, 217, 0);
+    grid-column-start: 7;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.grid-item:nth-child(5) {
+    background-color: rgb(233, 166, 12);
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.grid-item:nth-child(6) {
+    background-color: rgb(68, 158, 80);
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.grid-item:nth-child(7) {
+    background-color: rgb(231, 101, 151);
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.grid-item:nth-child(8) {
+    background-color: rgb(13, 145, 179);
+    grid-column-start: 7;
+    grid-column-end: 8;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.grid-item strong {
+    display: block;
+    font-size: 130%;
+}
+
+
+/* .grid-item:nth-child(even) {
+    background-color: rgb(84, 139, 170);
+}
+
+.grid-item:nth-child(odd) {
+    background-color: rgb(127, 231, 85);
+} */
